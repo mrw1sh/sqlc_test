@@ -1,4 +1,4 @@
-﻿version: '2'
+version: '2'
 plugins:
 - name: csharp
   wasm:
@@ -11,4 +11,6 @@ sql:
     engine: sqlite
     codegen:
       - plugin: csharp
-        out: SqliteDalGen
+        out: DBGen
+        options:
+            generateCsproj: true
